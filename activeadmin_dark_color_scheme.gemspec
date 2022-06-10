@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
                             "homepage_uri"      => spec.homepage,
                             "source_code_uri"   => spec.homepage }
 
-  spec.require_paths    = ["app", "lib/activeadmin"]
+  spec.require_paths    = ["app", "lib"]
 
   spec.bindir           = "exe"
   spec.executables      = []

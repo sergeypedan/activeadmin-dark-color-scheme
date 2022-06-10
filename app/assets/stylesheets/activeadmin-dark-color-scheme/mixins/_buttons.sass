@@ -10,7 +10,21 @@
 	text-shadow: none
 
 	&:not(.disabled):hover
-		background-image: linear-gradient(to bottom, lighten($btn-dark-1-gradient-stop-top, 3%), lighten($btn-dark-1-gradient-stop-bottom, 3%))
+		background-image: linear-gradient(to bottom, lighten($btn-dark-1-gradient-stop-top, 2%), lighten($btn-dark-1-gradient-stop-bottom, 2%))
+
+@mixin btn-dark-1-inset
+	background-color: $btn-dark-1-inset-bg
+	background-image: linear-gradient($btn-dark-1-inset-gradient-stop-top, $btn-dark-1-inset-gradient-stop-bottom)
+	border-top-color: $btn-datk-1-inset-border-top-color
+	border-right-color:  lighten($btn-dark-1-bg, 10%)
+	border-bottom-color: darken($btn-dark-1-gradient-stop-bottom, 10%)
+	border-left-color:   $btn-dark-1-inset-color
+	box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.3) inset
+	color: $btn-dark-1-color
+	text-shadow: none
+
+	&:not(.disabled):hover
+		background-image: linear-gradient(to bottom, lighten($btn-dark-1-inset-gradient-stop-top, 2%), lighten($btn-dark-1-inset-gradient-stop-bottom, 2%))
 
 @mixin btn-light-1
 	background-color: $btn-light-1-bg

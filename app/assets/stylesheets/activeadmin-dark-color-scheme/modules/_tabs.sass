@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark)
+	.tab-content
+		border-color: $tab-border-color
+
+	.ui-tabs-nav
+		li
+			a
+				@include btn-dark-1
+
+			&.ui-tabs-active a
+				@include btn-dark-1-inset

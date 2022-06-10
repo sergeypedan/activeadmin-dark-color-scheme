@@ -1,16 +1,24 @@
 @media (prefers-color-scheme: dark)
+	body.logged_out
+		.flash
+			-webkit-font-smoothing: antialiased
+			text-shadow: none
 
 	body.logged_in
 		.flash
-			background-color: #c2b36c
-			background-image: linear-gradient(#a99847, #a38e35)
-			border-bottom-color: #958118 !important
-			color: white
+			background-color: $alert-default-bg-color
+			background-image: linear-gradient($alert-default-gradient-stop-top, $alert-default-gradient-stop-bottom)
+			border-bottom-color: $alert-default-border-bottom-color !important
+			color: $alert-default-text-color
 			text-shadow: none
 
 			&.flash_notice
-				background-color: #4d8750
-				background-image: linear-gradient(#4e9a53, #4d8750)
-				border-bottom-color: #2e7732 !important
-				border-bottom: 1px solid #adcbaf
-				color: #daeec8
+				background-color: $alert-success-bg-color
+				background-image: linear-gradient($alert-success-gradient-stop-top, $alert-success-gradient-stop-bottom)
+				border-bottom-color: $alert-success-border-bottom-color !important
+				color: $alert-success-text-color
+
+	.active_admin.logged_out
+		.flash
+			&.flash_alert
+				color: $alert-danger-text-color
