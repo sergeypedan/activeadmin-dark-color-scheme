@@ -1,0 +1,8 @@
+---
+before_install: gem install bundler -v 1.17.2
+bundler_args: --without production
+cache: bundler
+install: bundle install --jobs=3
+language: ruby
+rvm: 2.6.8
+sudo: false

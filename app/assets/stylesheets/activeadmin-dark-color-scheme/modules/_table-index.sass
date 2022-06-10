@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: dark)
+
+	table.index_table
+		th
+			background-color: $panel-bg-color-solid
+			background-image: $panel-head-gradient
+			border-top-color:    $th-border-color-top
+			border-right-color:  $th-border-color-right !important
+			border-bottom-color: $th-border-color-bottom
+			border-left-color:   $th-border-color-left
+			box-shadow: none
+			color: hsl(0, 0%, 95%)
+			text-shadow: none
+
+			&.sorted-asc, &.sorted-desc
+				background-color: $th-bg-color
+				background-image: $panel-head-gradient
+
+			a, a:link, a:visited
+				color: hsl(0, 0%, 95%)
+
+		tr
+			&.even
+				td
+					background-color: $tr-even-bg-color
+
+			&.selected
+				td
+					background-color: $tr-selected-bg-color
+
+		td
+			border-bottom-color: $tr-border-bottom-color

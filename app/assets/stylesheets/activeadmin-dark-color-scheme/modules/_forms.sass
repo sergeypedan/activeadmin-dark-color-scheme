@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark)
+	form
+		input[type=submit],
+		input[type=button],
+		button
+			@include btn-light-1
+
+		fieldset
+			&.inputs
+				background-color: $panel-bg-color-transparent
+				box-shadow: $panel-shadow
+
+			legend
+				span
+					@include gradient-bar-1
+
+		ol > li label
+			color: $label-color !important
+
+		input[type=text],
+		input[type=password],
+		input[type=email],
+		input[type=number],
+		input[type=url],
+		input[type=tel],
+		input[type=date],
+		input[type=time],
+		textarea
+			border-color: $input-border-colors
+			box-shadow: inset 0 1px 5px hsla(0, 0%, 0%, .2)
+
+	input, textarea
+		background-color: $input-bg-color

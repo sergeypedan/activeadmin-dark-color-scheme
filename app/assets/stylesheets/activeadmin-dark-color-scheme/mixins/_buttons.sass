@@ -1,0 +1,22 @@
+@mixin btn-dark-1
+	background-color: $btn-dark-1-bg
+	background-image: linear-gradient(to bottom, $btn-dark-1-gradient-stop-top, $btn-dark-1-gradient-stop-bottom)
+	border-top-color:    lighten($btn-dark-1-gradient-stop-top, 10%)
+	border-right-color:  lighten($btn-dark-1-bg, 10%)
+	border-bottom-color: darken($btn-dark-1-gradient-stop-bottom, 10%)
+	border-left-color:   lighten($btn-dark-1-bg, 10%)
+	box-shadow: 0 1px 2px darken($btn-dark-1-gradient-stop-bottom, 10%)
+	color: $btn-dark-1-color
+	text-shadow: none
+
+	&:not(.disabled):hover
+		background-image: linear-gradient(to bottom, lighten($btn-dark-1-gradient-stop-top, 3%), lighten($btn-dark-1-gradient-stop-bottom, 3%))
+
+@mixin btn-light-1
+	background-color: $btn-light-1-bg
+	background-image: linear-gradient(180deg, $btn-light-1-gradient-stop-top, $btn-light-1-gradient-stop-bottom)
+	color: $btn-light-1-color
+	text-shadow: none
+
+	&:not(.disabled):hover
+		background-image: linear-gradient(to bottom, darken($btn-light-1-gradient-stop-top, 3%), darken($btn-light-1-gradient-stop-bottom, 3%))

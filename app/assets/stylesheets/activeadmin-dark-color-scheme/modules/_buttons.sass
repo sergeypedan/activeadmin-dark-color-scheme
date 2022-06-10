@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark)
+
+	a.table_tools_button,
+	.table_tools .dropdown_menu_button
+		color: #d7d7d7
+		@include gradient-bar-1
+
+		&:not(.disabled):hover
+			@include gradient-bar-1
+
+	a.batch_action
+		color: darkgray
+
+	.dropdown_menu
+		.dropdown_menu_list_wrapper
+			.dropdown_menu_list
+				background-color: $panel-bg-color-solid
+
+				li a:hover
+					$color: lighten($panel-bg-color-solid, 3%)
+					background-color: $color
+					background-image: linear-gradient($color, $color)
+
+	form
+		fieldset
+			&.actions, &.buttons
+				li.cancel
+					a
+						@include btn-dark-1
+
+	form.filter_form
+		a.clear_filters_btn
+			@include btn-dark-1

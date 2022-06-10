@@ -1,0 +1,10 @@
+.DS_Store
+.rspec_status
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
