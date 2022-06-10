@@ -37,10 +37,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.3")
   # SassC requires Ruby 2.3.3+
 
-  spec.add_runtime_dependency "autoprefixer-rails", "~> 10", ">= 10.4.7"
-	spec.add_runtime_dependency "sassc-rails",        "~> 2",  ">= 2.0.0"
+	spec.add_runtime_dependency "sassc-rails", "~> 2",  ">= 2.0.0"
 
-  spec.add_development_dependency "rspec",          "~> 3"
-  spec.add_development_dependency "term-ansicolor", "~> 1"
-  spec.add_development_dependency "yard",           "~> 0", ">= 0.9.20"
+  spec.add_development_dependency "autoprefixer-rails", "~> 10", ">= 10.4.7"
+  spec.add_development_dependency "rspec",              "~> 3"
+  spec.add_development_dependency "term-ansicolor",     "~> 1"
+  spec.add_development_dependency "yard",               "~> 0", ">= 0.9.20"
 end
