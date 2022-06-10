@@ -1,5 +1,7 @@
 # Dark color scheme for Activeadmin
 
+[![Gem Version](https://badge.fury.io/rb/activeadmin_dark_color_scheme.svg)](https://badge.fury.io/rb/activeadmin_dark_color_scheme)
+
 ## Installation
 
 Add this line to your application's Gemfile:
