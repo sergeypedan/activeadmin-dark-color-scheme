@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.summary          =  "A dark color scheme for ActiveAdmin Ruby CMS"
   spec.description      = <<~HEREDOC
                             #{spec.summary}. This gem provides Sass files that you can include via Sprockets.
-                            The dark theme will be automatically applied / turned off according to your system dark / light setting.
-                            You can override that config on the browser level if you wish.
+                            The dark theme automatically switches on / off with your system’s dark / light mode.
+                            You can override that on the browser level if you wish.
                           HEREDOC
 
   spec.homepage         =  "https://github.com/sergeypedan/activeadmin-dark-color-scheme"
@@ -37,10 +37,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.3")
   # SassC requires Ruby 2.3.3+
 
-  spec.add_runtime_dependency "autoprefixer-rails", ">= 9.1.0"
-	spec.add_runtime_dependency "sassc-rails", ">= 2.0.0"
+  spec.add_runtime_dependency "autoprefixer-rails", "~> 10", ">= 10.4.7"
+	spec.add_runtime_dependency "sassc-rails",        "~> 2",  ">= 2.0.0"
 
-  spec.add_development_dependency "rspec", "~> 3"
-  spec.add_development_dependency "term-ansicolor"
-  spec.add_development_dependency "yard", ">= 0.9.20", "< 1"
+  spec.add_development_dependency "rspec",          "~> 3"
+  spec.add_development_dependency "term-ansicolor", "~> 1"
+  spec.add_development_dependency "yard",           "~> 0", ">= 0.9.20"
 end

@@ -1,0 +1,1 @@
+activeadmin_dark_color_scheme.gemspec
