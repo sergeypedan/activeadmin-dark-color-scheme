@@ -68,3 +68,7 @@ Here is an example from [_table-index.sass](https://github.com/sergeypedan/activ
       color: hsl(0, 0%, 95%)
       text-shadow: none
 ```
+
+## How to disable
+
+Switch to light color scheme in you system preferences or your browser developer tools.
