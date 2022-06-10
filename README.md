@@ -1,4 +1,4 @@
-# Activeadmin::DarkColorScheme
+# Dark color scheme for Activeadmin
 
 ## Installation
 
@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 gem "activeadmin_dark_color_scheme"
 ```
 
-Add our Sass file to your CSS entrypoint that compiles ActiveAdmin CSS files:
+Import our Sass file “activeadmin-dark-color-scheme” in your CSS entrypoint that compiles ActiveAdmin CSS files:
 
 ```sass
 // app/assets/stylesheets/active_admin.sass
@@ -46,3 +46,25 @@ $link-color-1: crimson
 ```
 
 Or you could put your variables in a separate file and `@import` it.
+
+## How it works
+
+You import additional CSS, all of which is scoped under `@media (prefers-color-scheme: dark)` media declaration that matches your system (or browser) color scheme setting.
+
+Here is an example from [_table-index.sass](https://github.com/sergeypedan/activeadmin-dark-color-scheme/blob/master/app/assets/stylesheets/activeadmin-dark-color-scheme/modules/_table-index.sass):
+
+```sass
+@media (prefers-color-scheme: dark)
+
+  table.index_table
+    th
+      background-color: $panel-bg-color-solid
+      background-image: $panel-head-gradient
+      border-top-color:    $th-border-color-top
+      border-right-color:  $th-border-color-right !important
+      border-bottom-color: $th-border-color-bottom
+      border-left-color:   $th-border-color-left
+      box-shadow: none
+      color: hsl(0, 0%, 95%)
+      text-shadow: none
+```
