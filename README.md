@@ -71,6 +71,10 @@ Here is an example from [_table-index.sass](https://github.com/sergeypedan/activ
       text-shadow: none
 ```
 
+## ActiveAdmin version compatibility
+
+The current version of ActiveAdmin is 2.13.1. Our styles are and will be targeted on the latest version.
+
 ## How to disable
 
 Switch to light color scheme in you system preferences or your browser developer tools.
