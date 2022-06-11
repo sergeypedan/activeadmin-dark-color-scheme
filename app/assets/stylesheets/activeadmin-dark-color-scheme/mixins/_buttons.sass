@@ -12,6 +12,12 @@
 	&:not(.disabled):hover
 		background-image: linear-gradient(to bottom, lighten($btn-dark-1-gradient-stop-top, 2%), lighten($btn-dark-1-gradient-stop-bottom, 2%))
 
+	&:focus, &:focus-visible
+		outline-color:  $btn-focus-outline-color
+		outline-offset: $btn-focus-outline-auto-offset
+		outline-style:  $btn-focus-outline-auto-style
+		outline-width:  $btn-focus-outline-width
+
 @mixin btn-dark-1-inset
 	background-color: $btn-dark-1-inset-bg
 	background-image: linear-gradient($btn-dark-1-inset-gradient-stop-top, $btn-dark-1-inset-gradient-stop-bottom)
@@ -34,3 +40,9 @@
 
 	&:not(.disabled):hover
 		background-image: linear-gradient(to bottom, darken($btn-light-1-gradient-stop-top, 3%), darken($btn-light-1-gradient-stop-bottom, 3%))
+
+	&:focus, &:focus-visible
+		outline-color:  $btn-focus-outline-color
+		outline-offset: $btn-focus-outline-auto-offset
+		outline-style:  $btn-focus-outline-auto-style
+		outline-width:  $btn-focus-outline-width

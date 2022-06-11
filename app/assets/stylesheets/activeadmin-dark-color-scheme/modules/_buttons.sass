@@ -2,8 +2,8 @@
 
 	a.table_tools_button,
 	.table_tools .dropdown_menu_button
-		color: #d7d7d7
 		@include gradient-bar-1
+		color: #d7d7d7
 
 		&:not(.disabled):hover
 			@include gradient-bar-1
@@ -23,6 +23,11 @@
 					background-image: linear-gradient($color, $color)
 
 	form
+		input[type=submit],
+		input[type=button],
+		button
+			@include btn-light-1
+
 		fieldset
 			&.actions, &.buttons
 				li.cancel

@@ -1,22 +1,5 @@
 @media (prefers-color-scheme: dark)
 	form
-		input[type=submit],
-		input[type=button],
-		button
-			@include btn-light-1
-
-		fieldset
-			&.inputs
-				background-color: $panel-bg-color-transparent
-				box-shadow: $panel-shadow
-
-			legend
-				span
-					@include gradient-bar-1
-
-		ol > li label
-			color: $label-color !important
-
 		input[type=text],
 		input[type=password],
 		input[type=email],
@@ -31,3 +14,10 @@
 
 	input, textarea
 		background-color: $input-bg-color
+
+
+// &:focus, &:focus-visible
+//   outline-color: $focus-outline-color
+//   outline-offset: $focus-outline-offset
+//   outline-style: $focus-outline-style
+//   outline-width: $focus-outline-width
