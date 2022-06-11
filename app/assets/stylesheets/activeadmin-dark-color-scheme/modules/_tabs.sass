@@ -7,5 +7,11 @@
 			a
 				@include btn-dark-1
 
+				&:focus, &:focus-visible
+					outline-offset: -1px
+
 			&.ui-tabs-active a
 				@include btn-dark-1-inset
+
+				// &:focus, &:focus-visible
+				// 	outline-offset: -1px

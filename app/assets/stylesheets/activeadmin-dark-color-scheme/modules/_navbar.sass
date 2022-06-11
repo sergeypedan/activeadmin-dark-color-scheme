@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark)
+	#header
+		h1
+			a
+				&:focus, &:focus-visible
+					outline-offset: $btn-focus-outline-solid-offset
+					outline-color: $btn-focus-outline-color
+					outline-style: $btn-focus-outline-solid-style
+					outline-width: $btn-focus-outline-auto-offset
+
+		ul.tabs
+			> li
+				a
+					&:focus, &:focus-visible
+						outline-offset: $btn-focus-outline-solid-offset
+						outline-color: $btn-focus-outline-color
+						outline-style: $btn-focus-outline-solid-style
+						outline-width: $btn-focus-outline-auto-offset
