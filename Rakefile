@@ -1,6 +1,9 @@
 require "bundler/setup"
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
+require "term/ansicolor"
+
+require "./lib/activeadmin/dark_color_scheme"
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -53,9 +56,7 @@ task default: :spec
 desc "Dumps output to a CSS file for testing"
 task :debug do
 	require "sassc"
-	require "term/ansicolor"
 	require "autoprefixer-rails"
-	require "./lib/activeadmin/dark_color_scheme"
 
 	path = Activeadmin::DarkColorScheme.stylesheets_path
 	entrypoins = %w(_activeadmin-dark-color-scheme)
@@ -73,6 +74,12 @@ task :debug do
 		$stderr.puts Term::ANSIColor.green "Compiled #{out}"
 	end
 end
+
+# desc "Publish"
+# task :publish do
+# 	puts `gem push pkg/activeadmin_dark_color_scheme-#{Activeadmin::DarkColorScheme::VERSION}.gem`
+# end
+
 
 # desc 'Start a dummy Rails app server'
 # task :rails_server do
