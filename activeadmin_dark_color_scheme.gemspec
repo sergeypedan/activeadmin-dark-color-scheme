@@ -42,5 +42,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "autoprefixer-rails", "~> 10", ">= 10.4.7"
   spec.add_development_dependency "rspec",              "~> 3"
   spec.add_development_dependency "term-ansicolor",     "~> 1"
-  spec.add_development_dependency "yard",               "~> 0", ">= 0.9.20"
 end
