@@ -1,0 +1,42 @@
+@media (prefers-color-scheme: dark)
+	%btn-dark-inset-state
+		background-color: $btn-dark-1-inset-bg
+		background-image: linear-gradient($btn-dark-1-inset-gradient-stop-top, $btn-dark-1-inset-gradient-stop-bottom)
+		border-top-color: $btn-datk-1-inset-border-top-color
+		border-right-color:  lighten($btn-dark-1-bg, 10%)
+		border-bottom-color: darken($btn-dark-1-gradient-stop-bottom, 10%)
+		border-left-color:   $btn-dark-1-inset-color
+		box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.3) inset
+
+@mixin btn-dark-1
+	background-color: $btn-dark-1-bg
+	background-image: linear-gradient(to bottom, $btn-dark-1-gradient-stop-top, $btn-dark-1-gradient-stop-bottom)
+	border-top-color:    lighten($btn-dark-1-gradient-stop-top, 5%)
+	border-right-color:  lighten($btn-dark-1-bg, 10%)
+	border-bottom-color: darken($btn-dark-1-gradient-stop-bottom, 5%)
+	border-left-color:   lighten($btn-dark-1-bg, 10%)
+	box-shadow: 0 1px 2px darken($btn-dark-1-gradient-stop-bottom, 10%)
+	color: $btn-dark-1-color
+	text-shadow: none
+
+	&:not(.disabled)
+		&:hover:not(:active)
+			background-image: linear-gradient(to bottom, lighten($btn-dark-1-gradient-stop-top, 2%), lighten($btn-dark-1-gradient-stop-bottom, 2%))
+
+		&:active
+			@extend %btn-dark-inset-state
+
+	&:focus, &:focus-visible
+		outline-color:  $btn-focus-outline-color
+		outline-offset: $btn-focus-outline-auto-offset
+		outline-style:  $btn-focus-outline-auto-style
+		outline-width:  $btn-focus-outline-width
+
+
+@mixin btn-dark-1-inset
+	color: $btn-dark-1-color
+	@extend %btn-dark-inset-state
+
+	&:not(.disabled)
+		&:hover
+			background-image: linear-gradient(to bottom, lighten($btn-dark-1-inset-gradient-stop-top, 2%), lighten($btn-dark-1-inset-gradient-stop-bottom, 2%))
