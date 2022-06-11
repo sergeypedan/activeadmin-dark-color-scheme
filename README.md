@@ -1,4 +1,4 @@
-# Dark color scheme for Activeadmin
+# Dark color scheme for ActiveAdmin
 
 [![Gem Version](https://badge.fury.io/rb/activeadmin_dark_color_scheme.svg)](https://badge.fury.io/rb/activeadmin_dark_color_scheme)
 
