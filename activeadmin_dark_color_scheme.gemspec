@@ -34,6 +34,10 @@ Gem::Specification.new do |spec|
                               .reject { |f| f.start_with? "." }
                           end
 
-  spec.add_development_dependency "rspec",              "~> 3"
-  spec.add_development_dependency "term-ansicolor",     "~> 1"
+  spec.add_runtime_dependency "railties", ">= 4"
+
+  spec.add_development_dependency "rake", "~> 13"
+  spec.add_development_dependency "rspec", "~> 3"
+  spec.add_development_dependency "sassc", "~> 2", ">= 2.0.0"
+  spec.add_development_dependency "term-ansicolor", "~> 1"
 end
