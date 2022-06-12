@@ -69,6 +69,7 @@ task :debug do
 			f << css
 		end
 		$stderr.puts Term::ANSIColor.green "Compiled #{out}"
+		$stderr.puts css
 	end
 end
 
