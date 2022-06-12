@@ -12,11 +12,11 @@ module Activeadmin
 			end
 
 			def assets_path
-				@assets_path ||= File.join gem_path, 'assets'
+				@assets_path ||= File.join gem_path, "assets"
 			end
 
 			def stylesheets_path
-				File.join assets_path, 'stylesheets'
+				File.join assets_path, "stylesheets"
 			end
 
 		end
