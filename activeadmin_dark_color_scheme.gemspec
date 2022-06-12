@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
                             You can override that on the browser level if you wish.
                           HEREDOC
 
-  spec.homepage         =  "https://github.com/sergeypedan/activeadmin-dark-color-scheme"
+  spec.homepage         =  "https://github.com/sergeypedan/#{spec.name.gsub('_', '-')}"
   spec.extra_rdoc_files = ["README.md", "CHANGELOG.md"]
   spec.rdoc_options     = ["--charset=UTF-8"]
   spec.metadata         = { "changelog_uri"     => "#{spec.homepage}/blob/master/CHANGELOG.md",
@@ -34,12 +34,6 @@ Gem::Specification.new do |spec|
                               .reject { |f| f.start_with? "." }
                           end
 
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.3")
-  # SassC requires Ruby 2.3.3+
-
-	spec.add_runtime_dependency "sassc-rails", "~> 2",  ">= 2.0.0"
-
-  spec.add_development_dependency "autoprefixer-rails", "~> 10", ">= 10.4.7"
   spec.add_development_dependency "rspec",              "~> 3"
   spec.add_development_dependency "term-ansicolor",     "~> 1"
 end
