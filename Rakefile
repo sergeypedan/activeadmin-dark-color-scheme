@@ -56,7 +56,6 @@ task default: :spec
 desc "Dumps output to a CSS file for testing"
 task :debug do
 	require "sassc"
-	require "autoprefixer-rails"
 
 	path = Activeadmin::DarkColorScheme.stylesheets_path
 	entrypoins = %w(_activeadmin-dark-color-scheme)
@@ -66,8 +65,6 @@ task :debug do
 		engine = SassC::Engine.new(css, syntax: :sass, load_paths: [path])
 		out = File.join("tmp", "#{file[1..-1]}.css")
 		css = engine.render
-		css = AutoprefixerRails.process(css)
-		# File.write(out, css)
 		File.open(out, "w+") do |f|
 			f << css
 		end
