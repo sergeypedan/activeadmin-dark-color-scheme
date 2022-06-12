@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.rdoc_options     = ["--charset=UTF-8"]
   spec.metadata         = { "changelog_uri"     => "#{spec.homepage}/blob/master/CHANGELOG.md",
                             "documentation_uri" => "https://www.rubydoc.info/gems/#{spec.name}",
-                            "homepage_uri"      => spec.homepage,
+                            "homepage_uri"      => "https://sergeypedan.ru/open_source_projects/#{spec.name.gsub('_', '-')}",
                             "source_code_uri"   => spec.homepage }
 
   spec.require_paths    = ["app", "lib"]
