@@ -21,6 +21,9 @@
 	input, textarea
 		background-color: $input-bg-color
 
+		&[disabled], &[readonly]
+			background-color: hsl(200, 6%, 20%)
+
 		// &:focus, &:focus-visible
 		// 	outline-color:  $input-focus-outline-color
 		// 	outline-offset: $input-focus-outline-auto-offset
