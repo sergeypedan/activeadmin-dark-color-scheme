@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
                               .reject { |f| f.start_with? "." }
                           end
 
+  spec.add_runtime_dependency "activeadmin", ">= 2"
   spec.add_runtime_dependency "railties", ">= 4"
 
   spec.add_development_dependency "rake", "~> 13"
