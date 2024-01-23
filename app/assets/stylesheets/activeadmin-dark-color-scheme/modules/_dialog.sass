@@ -1,0 +1,13 @@
+@media (prefers-color-scheme: dark)
+	.ui-dialog
+		background-color: $body-bg-color
+
+		.ui-dialog-titlebar
+			@include gradient-bar-2
+
+		.ui-dialog-buttonpane
+			button
+				@include btn-light-1
+
+			button:last-child
+				@include btn-dark-1
